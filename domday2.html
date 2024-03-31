@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM method in js</h1>
+    <ul>
+        <li>getElementByID</li>
+        <li>getElementsByClassName</li>
+        <li>getElementByTagName</li>
+        <li>query Selector</li>
+        <li>querySelectorAll</li>
+    </ul>
+
+    <!-- <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ab quaerat aspernatur, aperiam, dolores veritatis temporibus sit consequatur explicabo esse rerum eaque voluptatum blanditiis culpa.
+    </p>  -->
+<!-- 
+    <button onclick="updateCSS ()">update CSS</button>
+
+    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint velit blanditiis inventore eveniet. Dolorum harum nulla culpa dolore maxime error tempora perferendis quos quidem vel!</p> 
+
+    <button id="btn">Submit</button>
+    <h2 class="p2">I am heading H2</h2>
+
+    <button class="p2">click me</button> --> 
+
+    <h1>getElementsByClassName</h1>
+    <img src="/home/gaurav/Desktop/free-images.jpg" width="300" alt="pic" class="img1"> 
+
+    <button onclick="ImageChanger()">Change image</button>
+    <br>
+
+    <h2 class="x">Welcome to DOM</h2>
+    <h2 class="x">Welcome to React</h2>
+    <h2 class="y">Happly hello</h2>
+    <button onclick="updateCSS()">Update</button>
+    <br>
+    <button onclick="updatetag()">onclick tag</button>
+    <script>
+        // function updateCSS () {
+        //     document.getElementById('p1').style.
+        //     cssText= "border:2px solid red;width:250px;background-color:lightgrey;text-align:justify;font-weight:bold" 
+
+        //     document.getElementById('p1').innerHTML = '<h1>welcome to react</h1>'
+        // }
+        // const a = document.getElementById("p1")
+        // console.log(a)
+
+        // const b = document.getElementsByClassName("p2")[2]
+        // console.log(b) 
+        const a =  document.getElementsByClassName("img1")[0]
+
+        function ImageChanger () {
+        a.src="/home/gaurav/Desktop/download.jpeg"
+        a.stle.width="500px"
+        }
+
+        function updateCSS(){
+            document.getElementsByClassName('x')[1].style.cssText='text-align:center;text-decoration:underline;text-decoration-color:red'
+        }
+
+        function updatetag(){
+            document.getElementsByTagName('h2')[1].innerHTML = "there is no session on Monday"
+        }
+    </script>
+</body>
+</html>

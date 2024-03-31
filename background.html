@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #dark ,#light{
+        padding :20px;
+        font-size: 25px;
+        border-radius: 50;
+        background-color :yellow;
+        font-weight :bold;
+    }
+</style>
+<body>
+    <center>
+        <button id="dark" onclick="darkMode()">Dark <br>Mode</button>
+        <button id="light" onclick="lightMode()">light <br> Mode</button>
+        <button id="dark" onclick="darkMode()">Gray <br>Mode</button>
+        <button id = "light" onclick="lightMode()">pink <br>Mode</button>
+        <button id="dark" onclick="darkMode()">blue <br>Mone</button>
+    </center>
+    
+    <script>
+        function darkMode () {
+            document.body.style.backgroundColor = "black"
+        }
+        function lightMode () {
+            document.body.style.backgroundColor = "white"
+        }
+        function darkMode() {
+            document.body.style.backgroundColor = "Gray"
+        }
+        function lightMode() {
+            document.body.style.backgroundColor = "pink"
+        }
+        function darkMode () {
+            document.body.style.backgroundColor = "blue"
+        }
+    </script>
+</body>
+</html>

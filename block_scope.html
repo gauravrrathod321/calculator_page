@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Block Scope in JS</h1>
+    <script>
+        var a = 20;
+        var b = 30
+        {
+            var a = 30;
+            var b = 20
+            var c = a+b
+            console.log(`${a} -inside the scope`)
+            console.log(`${b}`)
+            console.log(`the addition of a+b = ${c}`)
+        }
+        console.log(`${a} - outside the scope`)
+        console.log(`${b}- outside the scope`)
+
+        let a = 50 
+        let b = 30
+        {
+            
+            let a = 500 
+            console.log(`${a}`)
+            let z = x+y
+            console.log(`${b}`)
+        }
+
+        console.log(`${x}`)
+
+        const a = 20 
+        const b = 100 
+        {
+            const a = 10
+            console.log(`${a}`)
+        }
+        console.log(`${a}`)
+        console.log(`${b}`) 
+
+        
+    </script>
+</body>
+</html>

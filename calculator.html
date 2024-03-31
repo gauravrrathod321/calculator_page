@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style type="text/css">
+        #tabcal{
+            margin:auto;
+        }
+        #tabCal td{
+
+            background-color: rgb(111, 158, 105);
+            border:1px solid hsl(76, 93%, 49%);
+            border-radius: 3px;
+            width:50px;
+            height:40px;
+            font-size:20px;
+            text-align: center;
+            cursor: pointer;
+            background:rgb(220,120,200,0,1)
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <table width="400"  id="tabCal">
+        <tr>
+            <td class="bg-success" colspan="4" id="screen"></td>
+        </tr>
+        <tr>
+            <td onclick="cal('1')">1</td>
+            <td onclick="cal('2')">2</td>
+            <td onclick="cal('3')">3</td>
+            <td class="bg-warning" onclick="cal('+')">+</td>
+        </tr>
+        <tr>
+            <td onclick="cal('4')">4</td>
+            <td onclick="cal('5')">5</td>
+            <td onclick="cal('6')">6</td>
+            <td class="bg-warning" onclick="cal('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="cal('7')">7</td>
+            <td onclick="cal('8')">8</td>
+            <td onclick="cal('9')">9</td>
+            <td class="bg-warning" onclick="cal('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="clearScreen()">c</td>
+            <td onclick="cal('0')">0</td>
+            <td onclick="evalute()">=</td>
+            <td class="bg-warning" onclick="cal('/')">/</td>
+        </tr>
+        <tr>
+            <td class="bg-success" onclick="clearScreen()" colspan="2">Clear</td>
+            <td class="bg-success" onclick="erase()" colspan="2"> &#9003;</td>
+        </tr>
+    </table>
+    </div>
+    <script type="text/javascript">
+        function cal(e){
+            let screen = document.querySelector('#screen')
+            screen.innerHTML = screen.innerHTML + e
+        }
+
+        function evalute() {
+            let screen = document.querySelector('#screen')
+            screen.innerHTML = `${eval(screen.innerHTML)}`
+        }
+        function clearScreen () {
+            let screen = document.querySelector('#screen')
+            screen.innerHTML = ``
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getElementByID</h1>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nihil, necessitatibus voluptas eveniet aspernatur nobis odit doloremque optio deleniti consequuntur voluptatibus, nostrum temporibus, ipsa ad!
+    </p>
+    <button onclick="updateCSS()">Click me</button>
+
+    <script>
+        function updateCSS(){
+            // document.getElementById("p1").style.color = "red"
+            // document.getElementById("p1").style.fontSize = "25px"
+            // document.getElementById("p1").style.backgroundColor="lightgrey" 
+
+            // document.getElementById("p1").style.cssText='color:red;background-color:lightgrey;font-size;25px;text-align:justify' 
+
+            document.getElementById("p1").innerHTML = "welcome to DOM"
+        }
+    </script>
+</body>
+</html>
